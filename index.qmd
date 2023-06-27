@@ -1,0 +1,308 @@
+---
+title: "Creating an Effective and Enjoyable Learning Experience"
+subtitle: "Dr Arron Lacey"
+format:
+  revealjs:
+    theme: night
+    slide-number: true
+    chalkboard: 
+      buttons: false
+    preview-links: auto
+    logo: images/Alan_Turing_Institute_logo.svg.png
+    css: styles.css
+    footer: Data Science and AI Educator's Programme
+title-slide-attributes:
+  data-background-video: images/video.mp4
+  data-background-size: contain
+resources:
+  - demo.pdf
+---
+
+```{r, include=FALSE}
+tutorial::go_interactive()
+```
+
+## A little bit about me... {data-background-gradient="radial-gradient(#283b95, #17b2c3)"}
+::: incremental
+-   **2021:** Senior Community Manager at the Alan Turing Institute
+    - Work on the [EDoN Initiative](https://edon-initiative.org/)
+-   **2017:2021:** Lecturer in Machine Learning at Swansea University
+      - Now an Honorary Lecturer
+-   2011:2014 Epidemiologist at the [SAIL Databank](https://saildatabank.com/)
+    - Mainly epilepsy and cardiology
+:::
+
+## About this talk ...
+
+::: columns
+::: {.column width="50%"}
+::: {.fragment}
+- We learn best through **doing**, not just listening. 
+:::
+::: {.fragment}
+- We will focus on just two themes: **Achievement** and **Action**. 
+:::
+:::
+::: {.column width="50%"}
+<video loop data-autoplay src="images/ollie.mp4" height="700"></video>
+:::
+:::
+
+
+- Achievement
+- Action
+
+## About this talk ... {auto-animate=true}
+
+::: columns
+::: {.column width="50%"}
+- **Achievement**
+    - Expectations
+    - Understand your audience
+    - Relevance
+    - Accessible Content
+:::
+::: {.column width="50%"}
+- **Action**
+    - Instant Gratification
+    - Learning Environment
+    - Collaboration
+    - Future Learning
+:::
+:::
+    
+## Expectations
+
+::: columns
+::: {.column width="60%"}
+::: {.fragment}
+- Onboard the class - we do it in new jobs so why not in a learning environment?
+:::
+::: {.fragment}
+- Provide a roadmap for the session/course/workshop
+  - The class knows what to expect and to prepare
+:::
+::: {.fragment}
+- You will be able to do / understand **this** at the end
+:::
+:::
+::: {.column width="40%"}
+![](images/roadmap.jpg)
+:::
+:::
+
+
+## Understand your audience
+
+::: {.fragment}
+- Course participants will already have their own experience
+    - we want to build on that, not teach them what they already know
+:::
+::: {.fragment}
+- Assess their motivation and needs
+    - Try a pre-survey to get participant experience and tailor your delivery. 
+:::
+::: {.fragment}
+- Encourage constant feedback 
+    - Listen and pivot if needed
+    - Direct the audience to what kind of feedback will be helpful
+    - If I learn someone is a cardiologist I will try throw in some relevant examples later in the course
+:::
+
+## Relevance
+
+::: {.fragment}
+- No vague tutorials - embrace abstraction
+:::
+::: {.fragment}
+- Think of real-world challenges that students might face
+:::
+::: {.fragment}
+- Is this a health related course?
+  - Start scouring the internet for healthcare datsets to use!
+  - Although it's ok to use a really **out there** example to keep things fresh
+:::
+
+
+
+## Abstraction {auto-animate="true"}
+
+Abstraction is a powerful tool to help remember concepts - but are foo, bar and baz?
+
+``` {.python code-line-numbers="2|4|5|8"}
+# Function definition is here
+def foo( arg1, arg2 ):
+   # Divide and return"
+   bar = arg1 / arg2
+   return bar;
+
+# Now you can call sum function
+bar = foo( 10, 20 );
+```
+
+## Abstraction {auto-animate="true"}
+
+Use abstraction in function and variable names
+
+``` {.python code-line-numbers="2|4|5|8|10"}
+# Function definition is here
+def epilepsyIncidence( numEpilepsy, Population ):
+   # Divide and return"
+   RateRatio = (numEpilepsy / Population)*1000
+   return RateRatio;
+
+# Now you can call sum function
+IncidenceRate = epilepsyIncidence( 10, 5145 );
+
+print "The Incidence Rate Ratio for Epilepsy is : ", IncidenceRate, "per 10,000"
+"The Incidence Rate Ratio for Epilepsy is : 19.4 per 10,000"
+```
+
+## Abstraction
+
+![](images/starwarsfilter.png){.fragment .absolute left="-10"}
+
+![](images/ewokianflu.png){.fragment .absolute right="-100" width="500"}
+
+![](images/trekkies.png){.absolute .fragment bottom="20" right="20" width=400}
+
+##
+
+<section data-background-iframe="https://nerdist.com/article/star-trek-red-shirts-werent-statistically-the-most-likely-to-die-after-all/"data-background-interactive>
+</section>
+
+## 
+<section data-background-iframe="webexcersices.html"data-background-interactive></section>
+
+
+::: footer
+[https://arogozhnikov.github.io](https://arogozhnikov.github.io/2015/10/05/roc-curve.html)
+:::
+
+## Action
+
+::: {.fragment}
+- Absorbing knowledge is important, but acting on it re-enforces learned material
+:::
+::: {.fragment}
+- We should aim to minimize the time between learning a concept and practicing it.
+:::
+::: {.fragment}
+- Try to jump into an interactive Minimal Working Example (MWE) as often as possible
+:::
+::: {.fragment}
+- I try to stick to 20 minutes theory with MWEs followed by 30 mins practical
+:::
+
+## Instant gratification
+::: {.fragment}
+- Instant gratification is a powerful vehicle for learning
+  - Even after 15 years of coding I celebrate when my code works!
+:::
+::: {.fragment}
+- (Easy) Practice examples also allows us to fail (gracefully) and learn from mistakes
+  - This is why I can't do DIY...
+:::
+
+<video loop data-autoplay src="images/gratification.mp4" height="400" class="center"></video>
+
+##
+
+<section data-background-iframe="code-slide.html"data-background-interactive>
+</section>
+
+## {background="#FAF9F6"}
+<section data-background-iframe="rocdemo.html"data-background-interactive></section>
+
+::: footer
+[https://arogozhnikov.github.io](https://arogozhnikov.github.io/2015/10/05/roc-curve.html)
+:::
+
+## {background="#FAF9F6"}
+
+<section data-background-iframe="bivariate/index.html"data-background-interactive></section>
+
+::: footer
+[https://arogozhnikov.github.io](https://arogozhnikov.github.io/2015/10/05/roc-curve.html)
+:::
+
+
+::: footer
+Learn more: [Line Highlighting](https://quarto.org/docs/presentations/revealjs/#line-highlighting)
+:::
+
+
+
+## Learning Environment - build on MWEs
+
+::: columns
+::: {.column width="60%"}
+::: {.fragment}
+- A consistent learning environment that is easy to use
+:::
+::: {.fragment}
+- Keeps a tight focus for you to control the environment
+  - I recommend open source cloud based solutions where possible
+  - Kaggle, Colab, Binder etc
+:::
+::: {.fragment}
+- Can self assess and understand how they are learning
+:::
+:::
+::: {.column width="40%"}
+![](images/realworlddata.png)
+:::
+:::
+
+## Kaggle for Data Science and Machine Learning
+
+- My favourite cloud solution for teaching Data Science and ML
+- Dockerized notebooks
+- Free GPU
+- Access to many and huge datasets (including those hairy beasts)
+- Version control
+
+## Collaboration
+
+::: {.fragment}
+- Set the tone and expectations for collaborative sessions
+  - Code of conduct
+  - Set clear goals for sessions
+:::
+::: {.fragment}
+- Try and pair up participants that will learn from eachother
+:::
+::: {.fragment}
+- Some ideas:
+  - Discuss the benefits and potential harms of using digital technology to attempt to detect dementia 20 years early
+  - Create a COVID Dashboard that tracks new cases by variant over time
+  - GitHub Pull Request Practice 
+:::
+
+## Future Learning
+
+::: {.fragment}
+- Move the participants towards independence in the topic
+:::
+::: {.fragment}
+- Set them up to succeed
+  - Recommend learning materials that will build on the course and challenge them
+  - Tailor by discussing their motivations for enrolling on the course/workshop
+:::
+
+
+![](images/bayes_rules_book_cover.jpeg){.absolute .fragment bottom="50" left="100" width="220"}
+
+![](images/bayes-rules-hex.png){.absolute .fragment bottom="60" left="80" width="80" height="80"}
+  
+![](images/statistical-rethinking.png){.absolute .fragment bottom="50" right="100" width="220"}
+
+## Introduce relevant GitHub projects
+
+<a href="https://github.com/rstudio/vetiver-r/issues/120"><img src="images/vetiver-issue.png" style="width:300px;"></a>
+
+## Thank you for your time!
+
+Slides made with Quarto + revealjs
+
+<video muted data-autoplay src="images/redshirts.mov" width="500" class="center"></video>
